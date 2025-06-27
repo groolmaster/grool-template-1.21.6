@@ -26,7 +26,7 @@ public class ModBlocks {
     public static final Block CONDENSED_DIRT = register(
             "condensed_dirt",
             Block::new,
-            AbstractBlock.Settings.create().sounds(BlockSoundGroup.GRASS),
+            AbstractBlock.Settings.copy(Blocks.DIRT),
             true
     );
 

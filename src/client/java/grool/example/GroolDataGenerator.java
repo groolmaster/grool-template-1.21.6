@@ -7,5 +7,7 @@ public class GroolDataGenerator implements DataGeneratorEntrypoint {
 	@Override
 	public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
 
+
+
 	}
 }
