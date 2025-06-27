@@ -1,5 +1,7 @@
 package grool.example;
 
+import grool.example.block.ModBlocks;
+import grool.example.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -23,6 +25,8 @@ public class Grool implements ModInitializer {
 
 
 		//Initialize functions here
+		ModItems.initialize();
+		ModBlocks.initialize();
 
 
 	}
