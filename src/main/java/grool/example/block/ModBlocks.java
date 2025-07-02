@@ -30,6 +30,13 @@ public class ModBlocks {
             true
     );
 
+    public static final Block SMOOTH_STONE_ALT = register(
+            "smooth_stone_alt",
+            Block::new,
+            AbstractBlock.Settings.copy(Blocks.SMOOTH_STONE),
+            true
+    );
+
     public static final Block WOOD_SLAB = register(
             "wood_slab",
             Block::new,
@@ -79,6 +86,7 @@ public class ModBlocks {
         // Register the blocks as items, while making them part of the block item group
         ItemGroupEvents.modifyEntriesEvent(BLOCK_GROUP_KEY).register((itemGroup) -> {
             itemGroup.add(ModBlocks.CONDENSED_DIRT.asItem());
+            itemGroup.add(ModBlocks.SMOOTH_STONE_ALT.asItem());
             itemGroup.add(ModBlocks.WOOD_SLAB.asItem());
         });
 

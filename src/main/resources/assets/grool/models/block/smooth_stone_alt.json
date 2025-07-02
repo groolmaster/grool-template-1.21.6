@@ -1,0 +1,3 @@
+{ "parent": "minecraft:block/cube_all",
+  "textures": { "all": "grool:block/stones/stone_smooth_alt" }
+}
