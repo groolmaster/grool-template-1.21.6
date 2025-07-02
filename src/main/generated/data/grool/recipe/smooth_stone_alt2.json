@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": [
+    "minecraft:stone_bricks"
+  ],
+  "result": {
+    "id": "grool:smooth_stone_alt",
+    "count": 1
+  }
+}
