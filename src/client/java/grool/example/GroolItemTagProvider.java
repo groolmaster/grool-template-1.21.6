@@ -13,7 +13,7 @@ import java.util.concurrent.CompletableFuture;
 
 public class GroolItemTagProvider extends FabricTagProvider.ItemTagProvider {
     public GroolItemTagProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
-        super(output, RegistryKeys.ITEM, registriesFuture);
+        super(output, registriesFuture);
     }
 
     public static final TagKey<Item> SMELLY_ITEMS = TagKey.of(RegistryKeys.ITEM, Identifier.of(Grool.MOD_ID, "smelly_items"));
