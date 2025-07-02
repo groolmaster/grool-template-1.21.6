@@ -1,6 +1,7 @@
 package grool.example.item;
 
 import grool.example.Grool;
+import grool.example.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -15,15 +16,15 @@ public class ModItemGroups {
     public static final RegistryKey<ItemGroup> SIMPLE_GROUP_KEY = RegistryKey.of(Registries.ITEM_GROUP.getKey(), Identifier.of(Grool.MOD_ID, "item_group")); // Register simple item group key
     public static final ItemGroup SIMPLE_ITEM_GROUP = FabricItemGroup.builder()   // Create a new item group, this is the groups name internally within the mod
             .icon(() -> new ItemStack(ModItems.CUSTOM_ITEM))
-            .displayName(Text.translatable("Grool.item_group.custom_items"))  // Display name for the item group, in game
+            .displayName(Text.translatable("Item Group"))  // Display name for the item group, in game
             .build();
 
 
     // Make item group for modBlock items.
     public static final RegistryKey<ItemGroup> BLOCK_GROUP_KEY = RegistryKey.of(Registries.ITEM_GROUP.getKey(), Identifier.of(Grool.MOD_ID, "block_group")); // Register simple item group key
     public static final ItemGroup BLOCK_ITEM_GROUP = FabricItemGroup.builder()   // Create a new item group, this is the groups name internally within the mod
-            .icon(() -> new ItemStack(ModItems.CUSTOM_ITEM))
-            .displayName(Text.translatable("Grool.block_group.custom_items"))  // Display name for the item group, in game
+            .icon(() -> new ItemStack(ModBlocks.SMOOTH_STONE_ALT))
+            .displayName(Text.translatable("Block Group"))  // Display name for the item group, in game
             .build();
 
 
