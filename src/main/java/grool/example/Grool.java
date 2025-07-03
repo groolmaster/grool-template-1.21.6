@@ -28,7 +28,5 @@ public class Grool implements ModInitializer {
 		ModItems.initialize();
 		ModBlocks.initialize();
 
-
-
 	}
 }

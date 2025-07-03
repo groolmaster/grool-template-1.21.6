@@ -15,12 +15,13 @@ public class GroolEnglishLangProvider extends FabricLanguageProvider {
 
     @Override
     public void generateTranslations(RegistryWrapper.WrapperLookup wrapperLookup, TranslationBuilder translationBuilder) {
+        // Add translations for blocks
+        translationBuilder.add("item.grool.custom_item", "Custom Item");
+        translationBuilder.add("item.grool.condensed_dirt", "Condensed Dirt Block");
+        translationBuilder.add("item.grool.smooth_stone_alt", "Smooth Stone");
 
-        // Add translations for items, blocks, etc.
-        //translationBuilder.add("item.grool.example.dirt", "Dirt");
+        // Add translations for items
 
-        
-
-    }
-
+        // Add translations for other elements and so on
+        }
 }
