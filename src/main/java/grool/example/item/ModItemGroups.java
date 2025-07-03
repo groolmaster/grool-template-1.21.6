@@ -27,6 +27,4 @@ public class ModItemGroups {
             .displayName(Text.translatable("Block Group"))  // Display name for the item group, in game
             .build();
 
-
-
 }
