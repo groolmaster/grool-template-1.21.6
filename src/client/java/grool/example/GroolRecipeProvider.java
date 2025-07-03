@@ -1,6 +1,5 @@
 package grool.example;
 
-import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
 import grool.example.block.ModBlocks;
