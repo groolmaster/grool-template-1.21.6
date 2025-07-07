@@ -17,6 +17,6 @@ public class GroolBlockLootTableProvider extends FabricBlockLootTableProvider {
 
         addDrop(ModBlocks.CONDENSED_DIRT);
         addDrop(ModBlocks.WOOD_SLAB);
-        addDrop(ModBlocks.SMOOTH_STONE_ALT);
+        addDrop(ModBlocks.SMOOTH_STONE2);
     }
 }

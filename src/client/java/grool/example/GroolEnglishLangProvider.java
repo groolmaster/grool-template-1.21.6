@@ -18,7 +18,7 @@ public class GroolEnglishLangProvider extends FabricLanguageProvider {
         // Add translations for blocks
         translationBuilder.add("item.grool.custom_item", "Custom Item");
         translationBuilder.add("item.grool.condensed_dirt", "Condensed Dirt Block");
-        translationBuilder.add("item.grool.smooth_stone_alt", "Smooth Stone");
+        translationBuilder.add("item.grool.smooth_stone2", "Smooth Stone");
 
         // Add translations for items
 
