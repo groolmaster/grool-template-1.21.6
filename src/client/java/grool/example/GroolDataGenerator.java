@@ -14,9 +14,11 @@ public class GroolDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(GroolRecipeProvider::new);
 
 		pack.addProvider(GroolItemTagProvider::new);
-
+		pack.addProvider(GroolModelProvider::new);
 		pack.addProvider(GroolEnglishLangProvider::new);
 		pack.addProvider(GroolBlockLootTableProvider::new);
+		pack.addProvider(GroolBlockTagProvider::new);
+
 
 
 	}
