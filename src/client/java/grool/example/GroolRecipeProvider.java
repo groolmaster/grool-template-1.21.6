@@ -36,7 +36,7 @@ public class GroolRecipeProvider extends FabricRecipeProvider {
                         .offerTo(exporter);
 
                 // SHAPED RECIPE FOR SMOOTH_STONE2
-                createShaped( RecipeCategory.BUILDING_BLOCKS, ModBlocks.SMOOTH_STONE2, 4) // creates
+                createShaped( RecipeCategory.BUILDING_BLOCKS, ModBlocks.STONE_SMOOTH2, 4) // creates
                         .pattern("bb") // row 1, in crafting menu
                         .pattern("bb") // row 2, in crafting menu
                         .input('b', Items.STONE_BRICKS) // 'b' means "stone bricks" in the pattern, you can use ItemTags.x to represent existing groups of items
@@ -48,13 +48,13 @@ public class GroolRecipeProvider extends FabricRecipeProvider {
                 // Minecraft.Items.STONE BRICKS FROM ModBlocks.SMOOTH STONE
                 offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,
                         Items.STONE_BRICKS, //output
-                        ModBlocks.SMOOTH_STONE2, //input
+                        ModBlocks.STONE_SMOOTH2, //input
                         1 // output count?
                 );
 
                 // Other way around
                 offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,
-                        ModBlocks.SMOOTH_STONE2, //output
+                        ModBlocks.STONE_SMOOTH2, //output
                         Items.STONE_BRICKS, //input
                         1 // output count?
                 );

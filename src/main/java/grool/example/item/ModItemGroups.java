@@ -23,7 +23,7 @@ public class ModItemGroups {
     // Make item group for modBlock items.
     public static final RegistryKey<ItemGroup> BLOCK_GROUP_KEY = RegistryKey.of(Registries.ITEM_GROUP.getKey(), Identifier.of(Grool.MOD_ID, "block_group")); // Register simple item group key
     public static final ItemGroup BLOCK_ITEM_GROUP = FabricItemGroup.builder()   // Create a new item group, this is the groups name internally within the mod
-            .icon(() -> new ItemStack(ModBlocks.SMOOTH_STONE2))
+            .icon(() -> new ItemStack(ModBlocks.STONE_SMOOTH2))
             .displayName(Text.translatable("Block Group"))  // Display name for the item group, in game
             .build();
 

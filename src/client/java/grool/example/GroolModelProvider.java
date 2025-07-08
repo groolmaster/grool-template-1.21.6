@@ -14,7 +14,7 @@ public class GroolModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CONDENSED_DIRT);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SMOOTH_STONE_ALT);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.STONE_SMOOTH2);
     }
 
 
