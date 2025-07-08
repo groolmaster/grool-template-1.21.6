@@ -1,0 +1,17 @@
+## Adding blocks
+To add a block to the mod and have it be useful. 
+1. Add the block to the top of the ModBlocks.java ModBlocks class. 
+    a. There is already a template there.
+2. Register the block into the itemgroup to be accessible in the creative menu. Do this in ModBlocks.java's function *initialize* 
+3. Set up the 
+	1. In game name text in GroolEnglishLangProvider in the *generateTranslations* function (https://github.com/groolmaster/grool-template-1.21.6/blob/f8cb0771c988eb58c0bb3908687e408ac5bc9414/src/client/java/grool/example/GroolEnglishLangProvider.java)
+	2. A block Model, using GroolModelProvider in the *generateBlockStateModels* function (src/client/java/grool/example/GroolModelProvider.java) (https://github.com/groolmaster/grool-template-1.21.6/blob/f8cb0771c988eb58c0bb3908687e408ac5bc9414/src/client/java/grool/example/GroolModelProvider.java) There are other functions that create different models from functions found in BlockStateModelGenerator, just middle click the registerSimpleCubeAll function to see some of the options or just google around because there are lots of them. Looks like there is even a registerSmoothStone option, havent tried it yet though. 
+	3. BLOCKSTATE this is not yet automated, and remains something that I wonder if we should even bother with generating since we might have different preferences. So for now, make and place the .json file under "src/main/generated/assets/grool/blockstates". Its worth having a conversation about, since it makes it easier to create a block that behaves like a already existing block in game but harder to modify the nitty gritty stuff.
+	4. Textures, these are also not automated and should be placed in "src/main/resources/assets/grool/textures/block". Naming should be checked against the data generated model file for consistency otherwise it loads Gmod style.
+	5. BlockTags using GroolBlockTagProvider in the *configure* function. Examples should do. (https://github.com/groolmaster/grool-template-1.21.6/blob/f8cb0771c988eb58c0bb3908687e408ac5bc9414/src/client/java/grool/example/GroolBlockTagProvider.java)
+	6. BlockLootTable using GroolBlockLootTableProvider in the *generate* function. The drops there are simple but there are other varients that you can use. Our provider is in "src/client/java/grool/example/GroolBlockLootTableProvider.java" feel free to check out the fabric doc for a *little* more info. (https://docs.fabricmc.net/develop/data-generation/loot-tables)
+	7. Recipes are made in GroolRecipeProvider there are some examples there, where they are placed under the *getRecipeGenerator.generate()* function. (https://github.com/groolmaster/grool-template-1.21.6/blob/f8cb0771c988eb58c0bb3908687e408ac5bc9414/src/client/java/grool/example/GroolRecipeProvider.java)
+### Most of this is going to generate data under src/main/generated. 
+This means that it is recreated every time after we run data generation. So our blockstates and models should be consistent with these files since making any changes to the generated files might be lost the next time that data generation is run. The good news is that datagen makes things more consistent as to what we should have on both of our machines and makes re-setup and install way easier.
+
+
