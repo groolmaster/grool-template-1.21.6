@@ -13,6 +13,3 @@ To add a block to the mod and have it be useful.
 	7. Recipes are made in GroolRecipeProvider there are some examples there, where they are placed under the *getRecipeGenerator.generate()* function. (https://github.com/groolmaster/grool-template-1.21.6/blob/f8cb0771c988eb58c0bb3908687e408ac5bc9414/src/client/java/grool/example/GroolRecipeProvider.java)
 ### Most of this is going to generate data under src/main/generated. 
 This means that it is recreated every time after we run data generation. So our blockstates and models should be consistent with these files since making any changes to the generated files might be lost the next time that data generation is run. The good news is that datagen makes things more consistent as to what we should have on both of our machines and makes re-setup and install way easier.
-
-
-So for now, make and place the .json file under "src/main/generated/assets/grool/blockstates".
