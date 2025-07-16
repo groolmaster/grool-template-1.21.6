@@ -2,6 +2,7 @@ package grool.example;
 
 import grool.example.block.ModBlocks;
 import grool.example.item.ModItems;
+import grool.example.sound.ModSounds;
 import grool.example.util.GroolCustomTrades;
 import net.fabricmc.api.ModInitializer;
 
@@ -30,5 +31,6 @@ public class Grool implements ModInitializer {
 		ModBlocks.initialize();
 
 		GroolCustomTrades.registerCustomTrades();
+		ModSounds.registerSounds();
 	}
 }

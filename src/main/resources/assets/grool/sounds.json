@@ -1,0 +1,32 @@
+{
+  "tard_block_break": {
+    "subtitle": "grool.tard_block_break",
+    "sounds": [
+      "grool:tard_block_break"
+    ]
+  },
+  "tard_block_step": {
+    "subtitle": "grool.tard_block_step",
+    "sounds": [
+      "grool:tard_block_step"
+    ]
+  },
+  "tard_block_place": {
+    "subtitle": "grool.tard_block_place",
+    "sounds": [
+      "grool:tard_block_place"
+    ]
+  },
+  "tard_block_hit": {
+    "subtitle": "grool.tard_block_hit",
+    "sounds": [
+      "grool:tard_block_hit"
+    ]
+  },
+  "tard_block_fall": {
+    "subtitle": "grool.tard_block_fall",
+    "sounds": [
+      "grool:tard_block_fall"
+    ]
+  }
+}

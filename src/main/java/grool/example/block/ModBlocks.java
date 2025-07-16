@@ -1,6 +1,7 @@
 package grool.example.block;
 
 import grool.example.Grool;
+import grool.example.sound.ModSounds;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -43,7 +44,7 @@ public class ModBlocks {
     public static final Block GROOL_STONE_BRICKS = register(
             "grool_stone_bricks",
             Block::new,
-            AbstractBlock.Settings.copy(Blocks.STONE_BRICKS),
+            AbstractBlock.Settings.copy(Blocks.STONE_BRICKS).sounds(ModSounds.GROOL_STONE_BRICK_BLOCK_GROUP),
             true
     );
 
