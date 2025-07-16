@@ -23,6 +23,7 @@ public class ModItems {
     // Example custom item registration. You can add more items by following this pattern.
     public static final Item CUSTOM_ITEM = register("custom_item", Item::new, new Item.Settings().maxCount(64));
     public static final Item ANOTHER_ITEM = register("another_item", Item::new, new Item.Settings().maxCount(64));
+    public static final Item COIN = register("coin", Item::new, new Item.Settings().maxCount(64));
 
 
     // Send in the item name, a function to create the item, and the settings for the item. Registers the item with the given name.
@@ -53,6 +54,8 @@ public class ModItems {
         ItemGroupEvents.modifyEntriesEvent(SIMPLE_GROUP_KEY).register(itemGroup -> {
             itemGroup.add(ModItems.CUSTOM_ITEM);
             itemGroup.add(ModItems.ANOTHER_ITEM);
+            itemGroup.add(ModItems.COIN);
+
         });
     }
 }

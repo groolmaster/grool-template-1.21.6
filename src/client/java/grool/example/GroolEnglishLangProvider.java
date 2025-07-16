@@ -19,9 +19,12 @@ public class GroolEnglishLangProvider extends FabricLanguageProvider {
         translationBuilder.add("item.grool.custom_item", "Custom Item");
         translationBuilder.add("item.grool.condensed_dirt", "Condensed Dirt Block");
         translationBuilder.add("item.grool.stone_smooth2", "Smooth Stone 1");
+        translationBuilder.add("item.grool.stone_bricks", "Stone Bricks");
+        translationBuilder.add("item.grool.grool_stone_bricks", "Grool Stone Bricks");
+        translationBuilder.add("item.grool.stone_bricks_small_mossy", "Small Mossy Stone Bricks");
 
         // Add translations for items
-
+        translationBuilder.add("item.grool.coin", "Coin");
         // Add translations for other elements and so on
         }
 }

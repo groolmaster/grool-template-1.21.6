@@ -13,7 +13,6 @@ import net.minecraft.registry.RegistryWrapper;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
-import net.minecraft.registry.tag.ItemTags;
 
 public class GroolRecipeProvider extends FabricRecipeProvider {
     public GroolRecipeProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
@@ -48,6 +47,12 @@ public class GroolRecipeProvider extends FabricRecipeProvider {
                 // Minecraft.Items.STONE BRICKS FROM ModBlocks.SMOOTH STONE
                 offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,
                         Items.STONE_BRICKS, //output
+                        ModBlocks.STONE_SMOOTH2, //input
+                        1 // output count?
+                );
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,
+                        ModBlocks.GROOL_STONE_BRICKS, //output
                         ModBlocks.STONE_SMOOTH2, //input
                         1 // output count?
                 );

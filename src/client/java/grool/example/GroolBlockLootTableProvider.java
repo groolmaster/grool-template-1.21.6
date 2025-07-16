@@ -14,9 +14,13 @@ public class GroolBlockLootTableProvider extends FabricBlockLootTableProvider {
 
     @Override
     public void generate() {
-
+        //test blocks
         addDrop(ModBlocks.CONDENSED_DIRT);
         addDrop(ModBlocks.WOOD_SLAB);
+
+        // ----------------------------------  GROOL BLOCKS  ----------------------------------
         addDrop(ModBlocks.STONE_SMOOTH2);
+        addDrop(ModBlocks.GROOL_STONE_BRICKS);
+        addDrop(ModBlocks.STONE_BRICKS_SMALL_MOSSY);
     }
 }

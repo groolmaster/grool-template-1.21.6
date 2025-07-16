@@ -3,10 +3,7 @@ package grool.example;
 import grool.example.block.ModBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
 import net.minecraft.item.Item;
-import net.minecraft.item.Items;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
@@ -29,7 +26,8 @@ public class GroolBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         // ----------------------------------  TOOL MINING DEFINITIONS  ----------------------------------
         valueLookupBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.STONE_SMOOTH2)
-                .add(ModBlocks.CONDENSED_DIRT)
+                .add(ModBlocks.GROOL_STONE_BRICKS)
+                .add(ModBlocks.STONE_BRICKS_SMALL_MOSSY)
                 ;
 
         valueLookupBuilder(BlockTags.AXE_MINEABLE)

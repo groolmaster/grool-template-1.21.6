@@ -2,6 +2,7 @@ package grool.example;
 
 import grool.example.block.ModBlocks;
 import grool.example.item.ModItems;
+import grool.example.util.GroolCustomTrades;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -28,5 +29,6 @@ public class Grool implements ModInitializer {
 		ModItems.initialize();
 		ModBlocks.initialize();
 
+		GroolCustomTrades.registerCustomTrades();
 	}
 }

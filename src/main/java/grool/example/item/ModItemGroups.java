@@ -26,5 +26,4 @@ public class ModItemGroups {
             .icon(() -> new ItemStack(ModBlocks.STONE_SMOOTH2))
             .displayName(Text.translatable("Block Group"))  // Display name for the item group, in game
             .build();
-
 }

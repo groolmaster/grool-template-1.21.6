@@ -1,8 +1,6 @@
 package grool.example.block;
 
 import grool.example.Grool;
-import grool.example.item.ModItemGroups;
-import grool.example.item.ModItems;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -13,7 +11,6 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
-import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 
 import java.util.function.Function;
@@ -21,7 +18,6 @@ import java.util.function.Function;
 import static grool.example.item.ModItemGroups.*;
 
 public class ModBlocks {
-
     // BLOCKS HERE
     public static final Block CONDENSED_DIRT = register(
             "condensed_dirt",
@@ -44,7 +40,19 @@ public class ModBlocks {
             true
     );
 
+    public static final Block GROOL_STONE_BRICKS = register(
+            "grool_stone_bricks",
+            Block::new,
+            AbstractBlock.Settings.copy(Blocks.STONE_BRICKS),
+            true
+    );
 
+    public static final Block STONE_BRICKS_SMALL_MOSSY = register(
+            "stone_bricks_small_mossy",
+            Block::new,
+            AbstractBlock.Settings.copy(Blocks.STONE_BRICKS),
+            true
+    );
 
 
 
@@ -87,10 +95,9 @@ public class ModBlocks {
         ItemGroupEvents.modifyEntriesEvent(BLOCK_GROUP_KEY).register((itemGroup) -> {
             itemGroup.add(ModBlocks.CONDENSED_DIRT.asItem());
             itemGroup.add(ModBlocks.STONE_SMOOTH2.asItem());
+            itemGroup.add(ModBlocks.GROOL_STONE_BRICKS.asItem());
+            itemGroup.add(ModBlocks.STONE_BRICKS_SMALL_MOSSY.asItem());
             itemGroup.add(ModBlocks.WOOD_SLAB.asItem());
         });
-
-
     }
-
 }
