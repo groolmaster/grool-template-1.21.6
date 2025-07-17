@@ -20,7 +20,7 @@ public class GroolBlockLootTableProvider extends FabricBlockLootTableProvider {
 
         // ----------------------------------  GROOL BLOCKS  ----------------------------------
         addDrop(ModBlocks.STONE_SMOOTH2);
-        addDrop(ModBlocks.GROOL_STONE_BRICKS);
+        addDrop(ModBlocks.STONE_BRICKS_SMALL);
         addDrop(ModBlocks.STONE_BRICKS_SMALL_MOSSY);
     }
 }

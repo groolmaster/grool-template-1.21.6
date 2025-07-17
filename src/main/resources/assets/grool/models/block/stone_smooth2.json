@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "grool:block/stone_smooth2"
+    "all": "grool:block/stones/stone_smooth2"
   }
 }

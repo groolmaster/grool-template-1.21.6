@@ -17,7 +17,7 @@ public class GroolModelProvider extends FabricModelProvider {
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CONDENSED_DIRT);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.STONE_SMOOTH2);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.GROOL_STONE_BRICKS);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.STONE_BRICKS_SMALL);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.STONE_BRICKS_SMALL_MOSSY);
     }
 

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "grool:block/stone_bricks_small_mossy"
+    "all": "grool:block/stone_bricks_small/stone_bricks_small_mossy"
   }
 }
