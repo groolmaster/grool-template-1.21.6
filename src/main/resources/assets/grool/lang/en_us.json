@@ -6,9 +6,15 @@
   "item.grool.stone_bricks_small_mossy": "Small Mossy Stone Bricks",
   "item.grool.stone_smooth2": "Smooth Stone 1",
 
+  "item.grool.music_disc_a_message_for_newgounds": "A Message for Newgounds",
+  "item.grool.music_disc_a_message_for_newgounds.desc": "A Message for Newgounds",
+
   "item.grool.glass_shutters_music_disc": "Sierra On-Line - Glass Shutters",
   "item.grool.glass_shutters_music_disc.desc": "Sierra On-Line - Glass Shutters",
 
+
   "item.grool.spookster_music_disc": "???",
-  "item.grool.spookster_music_disc.desc": "???"
+  "item.grool.spookster_music_disc.desc": "???",
+
+
 }

@@ -39,6 +39,11 @@ public class ModSounds {
     public static final RegistryKey<JukeboxSong> SPOOKSTER_KEY =
             RegistryKey.of(RegistryKeys.JUKEBOX_SONG, Identifier.of(Grool.MOD_ID, "spookster"));
 
+    public static final SoundEvent A_MESSAGE_FOR_NEWGOUNDS = registerSoundEvent("a_message_for_newgounds"); //???
+    public static final RegistryKey<JukeboxSong> A_MESSAGE_FOR_NEWGOUNDS_KEY =
+            RegistryKey.of(RegistryKeys.JUKEBOX_SONG, Identifier.of(Grool.MOD_ID, "a_message_for_newgounds"));
+
+
 
 
 

@@ -1,0 +1,8 @@
+{
+  "comparator_output":  15,
+  "description": {
+    "translate" : "item.grool.music_disc_a_message_for_newgounds.desc"
+  },
+  "length_in_seconds":  75,
+  "sound_event":  "grool:a_message_for_newgounds"
+}

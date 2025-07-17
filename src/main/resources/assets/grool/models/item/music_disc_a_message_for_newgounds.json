@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "grool:item/music_disc_a_message_for_newgounds"
+  }
+}

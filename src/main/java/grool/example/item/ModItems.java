@@ -32,6 +32,9 @@ public class ModItems {
     public static final Item SPOOKSTER_MUSIC_DISC = register
             ("spookster_music_disc",Item::new,new Item.Settings().jukeboxPlayable(ModSounds.SPOOKSTER_KEY).maxCount(1));
 
+    public static final Item MUSIC_DISC_A_MESSAGE_FOR_NEWGOUNDS = register
+            ("music_disc_a_message_for_newgounds",Item::new,new Item.Settings().jukeboxPlayable(ModSounds.A_MESSAGE_FOR_NEWGOUNDS_KEY).maxCount(1));
+
 
 
 
@@ -66,6 +69,7 @@ public class ModItems {
             itemGroup.add(ModItems.COIN);
             itemGroup.add(ModItems.GLASS_SHUTTERS_MUSIC_DISC);
             itemGroup.add(ModItems.SPOOKSTER_MUSIC_DISC);
+            itemGroup.add(ModItems.MUSIC_DISC_A_MESSAGE_FOR_NEWGOUNDS);
 
         });
     }
