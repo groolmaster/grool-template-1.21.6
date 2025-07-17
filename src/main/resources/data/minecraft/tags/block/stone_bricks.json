@@ -1,5 +1,7 @@
 {
   "values": [
-    "grool:smooth_stone2"
+    "grool:smooth_stone2",
+    "grool:stone_blocks_small",
+    "grool:stone_blocks_small_mossy"
   ]
 }
