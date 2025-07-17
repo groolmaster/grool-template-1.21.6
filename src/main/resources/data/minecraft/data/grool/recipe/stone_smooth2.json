@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "multi_bench",
+  "key": {
+    "b": "minecraft:stone_bricks"
+  },
+  "pattern": [
+    "bb",
+    "bb"
+  ],
+  "result": {
+    "count": 4,
+    "id": "grool:stone_smooth2"
+  }
+}

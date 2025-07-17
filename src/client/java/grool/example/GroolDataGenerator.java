@@ -9,14 +9,19 @@ public class GroolDataGenerator implements DataGeneratorEntrypoint {
 
 		FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
 
+
+		/*
 		// Add DataGen Providers
 		pack.addProvider(GroolAdvancementProvider::new);
 		pack.addProvider(GroolRecipeProvider::new);
+
 
 		pack.addProvider(GroolItemTagProvider::new);
 		pack.addProvider(GroolModelProvider::new);
 		pack.addProvider(GroolEnglishLangProvider::new);
 		pack.addProvider(GroolBlockLootTableProvider::new);
 		pack.addProvider(GroolBlockTagProvider::new);
+	*/
+		// Uncomment the above lines to enable additional data generation providers
 	}
 }
