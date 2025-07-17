@@ -52,7 +52,7 @@ public class GroolRecipeProvider extends FabricRecipeProvider {
                 );
 
                 offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,
-                        ModBlocks.GROOL_STONE_BRICKS, //output
+                        ModBlocks.STONE_BRICKS_SMALL, //output
                         ModBlocks.STONE_SMOOTH2, //input
                         1 // output count?
                 );

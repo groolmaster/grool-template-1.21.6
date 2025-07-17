@@ -26,7 +26,7 @@ public class GroolBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         // ----------------------------------  TOOL MINING DEFINITIONS  ----------------------------------
         valueLookupBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.STONE_SMOOTH2)
-                .add(ModBlocks.GROOL_STONE_BRICKS)
+                .add(ModBlocks.STONE_BRICKS_SMALL)
                 .add(ModBlocks.STONE_BRICKS_SMALL_MOSSY)
                 ;
 

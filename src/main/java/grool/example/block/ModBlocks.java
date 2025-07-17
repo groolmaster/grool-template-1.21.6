@@ -41,10 +41,10 @@ public class ModBlocks {
             true
     );
 
-    public static final Block GROOL_STONE_BRICKS = register(
-            "grool_stone_bricks",
+    public static final Block STONE_BRICKS_SMALL = register(
+            "stone_bricks_small",
             Block::new,
-            AbstractBlock.Settings.copy(Blocks.STONE_BRICKS).sounds(ModSounds.GROOL_STONE_BRICK_BLOCK_GROUP),
+            AbstractBlock.Settings.copy(Blocks.STONE_BRICKS),
             true
     );
 
@@ -96,7 +96,7 @@ public class ModBlocks {
         ItemGroupEvents.modifyEntriesEvent(BLOCK_GROUP_KEY).register((itemGroup) -> {
             itemGroup.add(ModBlocks.CONDENSED_DIRT.asItem());
             itemGroup.add(ModBlocks.STONE_SMOOTH2.asItem());
-            itemGroup.add(ModBlocks.GROOL_STONE_BRICKS.asItem());
+            itemGroup.add(ModBlocks.STONE_BRICKS_SMALL.asItem());
             itemGroup.add(ModBlocks.STONE_BRICKS_SMALL_MOSSY.asItem());
             itemGroup.add(ModBlocks.WOOD_SLAB.asItem());
         });
