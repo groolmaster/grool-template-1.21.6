@@ -4,5 +4,11 @@
   "item.grool.custom_item": "Custom Item",
   "item.grool.stone_bricks_small": "Grool Stone Bricks",
   "item.grool.stone_bricks_small_mossy": "Small Mossy Stone Bricks",
-  "item.grool.stone_smooth2": "Smooth Stone 1"
+  "item.grool.stone_smooth2": "Smooth Stone 1",
+
+  "item.grool.glass_shutters_music_disc": "Sierra On-Line - Glass Shutters",
+  "item.grool.glass_shutters_music_disc.desc": "Sierra On-Line - Glass Shutters",
+
+  "item.grool.spookster_music_disc": "???",
+  "item.grool.spookster_music_disc.desc": "???"
 }

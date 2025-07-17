@@ -1,8 +1,11 @@
 package grool.example.sound;
 
 import grool.example.Grool;
+import net.minecraft.block.jukebox.JukeboxSong;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.util.Identifier;
@@ -17,9 +20,7 @@ public class ModSounds {
     public static final SoundEvent TARD_BLOCK_HIT = registerSoundEvent("tard_block_hit");
     public static final SoundEvent TARD_BLOCK_FALL = registerSoundEvent("tard_block_fall");
 
-
-
-    public static final BlockSoundGroup GROOL_STONE_BRICK_BLOCK_GROUP = new BlockSoundGroup(
+    public static final BlockSoundGroup STONE_BRICKS_SMALL_BLOCK_GROUP = new BlockSoundGroup(
             1.0F, // Volume
             1.0F, // Pitch
             ModSounds.TARD_BLOCK_BREAK,
@@ -28,6 +29,17 @@ public class ModSounds {
             ModSounds.TARD_BLOCK_HIT,
             ModSounds.TARD_BLOCK_FALL
     );
+
+    // Disc sounds
+    public static final SoundEvent GLASS_SHUTTERS = registerSoundEvent("glass_shutters"); // Sierra On-Line : Glass Shutters
+    public static final RegistryKey<JukeboxSong> GLASS_SHUTTERS_KEY =
+            RegistryKey.of(RegistryKeys.JUKEBOX_SONG, Identifier.of(Grool.MOD_ID, "glass_shutters"));
+
+    public static final SoundEvent SPOOKSTER = registerSoundEvent("spookster"); //???
+    public static final RegistryKey<JukeboxSong> SPOOKSTER_KEY =
+            RegistryKey.of(RegistryKeys.JUKEBOX_SONG, Identifier.of(Grool.MOD_ID, "spookster"));
+
+
 
 
     private static SoundEvent registerSoundEvent(String name) {

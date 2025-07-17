@@ -28,5 +28,21 @@
     "sounds": [
       "grool:tard_block_fall"
     ]
+  },
+  "glass_shutters": {
+    "sounds": [
+      {
+        "name": "grool:glass_shutters",
+        "stream": true
+      }
+    ]
+  },
+  "spookster": {
+    "sounds": [
+      {
+        "name": "grool:spookster",
+        "stream": true
+      }
+    ]
   }
 }

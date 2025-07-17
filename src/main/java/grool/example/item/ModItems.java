@@ -1,6 +1,7 @@
 package grool.example.item;
 
 import grool.example.Grool;
+import grool.example.sound.ModSounds;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
@@ -24,6 +25,14 @@ public class ModItems {
     public static final Item CUSTOM_ITEM = register("custom_item", Item::new, new Item.Settings().maxCount(64));
     public static final Item ANOTHER_ITEM = register("another_item", Item::new, new Item.Settings().maxCount(64));
     public static final Item COIN = register("coin", Item::new, new Item.Settings().maxCount(64));
+
+    public static final Item GLASS_SHUTTERS_MUSIC_DISC = register
+            ("glass_shutters_music_disc",Item::new,new Item.Settings().jukeboxPlayable(ModSounds.GLASS_SHUTTERS_KEY).maxCount(1));
+
+    public static final Item SPOOKSTER_MUSIC_DISC = register
+            ("spookster_music_disc",Item::new,new Item.Settings().jukeboxPlayable(ModSounds.SPOOKSTER_KEY).maxCount(1));
+
+
 
 
     // Send in the item name, a function to create the item, and the settings for the item. Registers the item with the given name.
@@ -55,6 +64,8 @@ public class ModItems {
             itemGroup.add(ModItems.CUSTOM_ITEM);
             itemGroup.add(ModItems.ANOTHER_ITEM);
             itemGroup.add(ModItems.COIN);
+            itemGroup.add(ModItems.GLASS_SHUTTERS_MUSIC_DISC);
+            itemGroup.add(ModItems.SPOOKSTER_MUSIC_DISC);
 
         });
     }
